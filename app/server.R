@@ -12,7 +12,7 @@ library(maptools)
 library(broom)
 library(httr)
 
-load('processed_data.RData')
+load('processed_data.Rdata')
 load('building_geo.RData')
 
 under <- readOGR(dsn = ".", layer = "ZIP_CODE_040114")
@@ -140,7 +140,7 @@ shinyServer(function(input, output) {
         ts <-
           ggplot(ts_data, aes(x = Year, y = `Number of litigation`)) +
           geom_bar(stat = "identity") +
-          ggtitle("Amount of Litigations in each year") +
+          ggtitle("Number of Litigations each year") +
           labs(x = "Years", y = "Number of litigation") + coord_flip()
         ts <- ggplotly(ts)
         ts
@@ -225,7 +225,7 @@ shinyServer(function(input, output) {
       return(NULL)
     }
     
-    ts_data_t3 <- group_by(data, BuildingID) %>% tally()
+    ts_data_t3 <- group_by(data_t3, BuildingID) %>% count()
     colnames(ts_data_t3) <-
       c("BuildingID", "Number of litigations")
     ts_data_t3 <-
@@ -237,8 +237,9 @@ shinyServer(function(input, output) {
       ggplot(ts_data_t3,
              aes(x = `Number of litigations`, y = `Number of buildings`)) +
       geom_bar(stat = "identity") +
-      ggtitle("Histogram of buildings per litigation number") +
-      labs(x = "Number of litigations", y = "Number of buildings") #+ coord_flip()
+      ggtitle("Buildings per litigation number") +
+      labs(x = "Number of litigations", y = "Number of buildings") +
+      theme(plot.title = element_text(size = 12, face = "bold"))
     ts_t3 <- ggplotly(ts_t3)
     ts_t3
   })

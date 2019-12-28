@@ -2,4 +2,6 @@
 
 ### Doc folder
 
-The doc directory contains the report or presentation files. It can have subfolders.  
+The doc directory contains the report or presentation files. 
+Appendix_A.R, Appendix_B.R, Tab1.Rmd, Tab2.Rmd, Tab3.Rmd, data_processing.Rmd, final_app.r are allcontributed to the Shiny App.
+www is subfolder for figures.
