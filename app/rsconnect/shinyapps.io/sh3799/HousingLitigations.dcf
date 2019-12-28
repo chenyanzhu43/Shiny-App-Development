@@ -1,0 +1,13 @@
+name: HousingLitigations
+title: HousingLitigations
+username:
+account: sh3799
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1304664
+bundleId: 2482984
+url: https://sh3799.shinyapps.io/HousingLitigations/
+when: 1570602827.78369
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md
