@@ -27,7 +27,20 @@ The last two tabs are Appendix. Appendix A is about case development and Appendi
 
 + **Contribution statement**: 
 
-All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
+All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement.
+
+**The following are more explanations and details of our equally contribution.**
+
+In our first meeting, we started to looking for finding the data sets. All of us had suggestion for that and participate in the brainstorming on choosing it. After finalizing the data set, we started brainstorming and discussing on the features that we can show and visualize in our project to be applicable and useful for its audience.
+After that, we splitted to two subgroups based on the tabs and features. One subgroup included Hao and Haghpanah, and the other included Chen, Lu, and Yang. Each of these subgroups start working together. The first subgroup came up with ideas that they can show the information in two different tabs instead of one and in that case it would be better and more informative. The other subgroup splitted the work of data cleaning and doing the tab and providing the appendixes for the project. Also, we had some meeting which all the members were presented and feedback on the other works and ideas to improve the whole project and tie all the tabs together to make them consistent. At the end, Hao was responsible to deploy everything to the shiny app. However, all the people did change their code and variables and data path and ... in order to prevent the conflicts during the merge. And after that other, especially Haghpanah which was supposed to gave the presentation, checked the merged code and deployed on shiny app to debug and report any bug and issues. So, we believe that every one did their bests and we participate almost equally. (The itemized contribution of everyone's work is listed in below.)
+
++ Chen, Yanzhu: brainstorm, data cleaning, tab 1 litigation overview(20%), readme file editing
++ Haghpanah, Fateme Sadat: brainstorm, tab 3 respondent, debugging the final deployed code on shiny and check the consistency of every part of the app and report problems.
++ Hao, Sixing (leader): brainstorm, tab 2 building, merging all tabs together, upload and deploy shiny app
++ Lu, Haotian: brainstorm, Appendix A&B, tab 1 litigation overview(20%)
++ Yang, Nan: brainstorm, tab 1 litigation overview(60%)
+
+ 
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
